@@ -88,7 +88,7 @@
                     </li>
                 <?php }; ?> 
                 <!-- Barang -->
-                <?php if($role=="Admin" || $role=="Staff Gudang" || $role=="Pegawai Kasir") { ?>
+                <?php if($role=="Admin" || $role=="Staff Gudang") { ?>
                     <li class="<?php if (
                         $title == 'Barang' ||
                         $title == 'Kategori' ||
@@ -328,20 +328,7 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function() {
-    $("#showPassword a").on('click', function(event) {
-        event.preventDefault();
-        if($('#showPassword input').attr("type") == "text"){
-            $('#showPassword input').attr('type', 'password');
-            $('#showPassword i').addClass( "fa-eye-slash" );
-            $('#showPassword i').removeClass( "fa-eye" );
-        }else if($('#showPassword input').attr("type") == "password"){
-            $('#showPassword input').attr('type', 'text');
-            $('#showPassword i').removeClass( "fa-eye-slash" );
-            $('#showPassword i').addClass( "fa-eye" );
-        }
-    });
-});
+
 // menentukan field harga dari pilihan barang
 var basePrice = 0;
 

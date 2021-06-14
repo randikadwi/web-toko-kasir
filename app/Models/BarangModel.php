@@ -67,8 +67,8 @@ class BarangModel extends Model
         // mengambil data role dari session yang sedang aktif
         $role = (session()->get('role'));
 
-        // jika role  "Admin" / "Pegawai Kasir" / "Staff Gudang"
-        if (($role==("Admin")) || ($role==("Pegawai Kasir")) || ($role==("Staff Gudang"))) {
+        // jika role  "Admin"  / "Staff Gudang"
+        if (($role==("Admin"))  || ($role==("Staff Gudang"))) {
             // mengembalikan nilai True 
             return True;
         }else{

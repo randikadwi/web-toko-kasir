@@ -94,7 +94,7 @@
             <a class="navbar-brand offset-1" href="#">
                 <!-- <img  src="<?= base_url() ?>/assets/img/Storefront.svg" class="d-inline-block" alt=""> -->
                 <img width="60px" src="<?= base_url() ?>/assets/img/logo.png" class="d-inline-block mr-3" alt="">
-                <h2 class="judul">TOKO KASIR</h2>
+                <h2 class="judul">KASIR TOKO</h2>
             </a>
         </nav>
     </div>

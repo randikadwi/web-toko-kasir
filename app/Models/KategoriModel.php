@@ -55,7 +55,7 @@ class KategoriModel extends Model
         $role = (session()->get('role'));
 
         // jika role  "Admin" / "Pegawai Kasir" / "Staff Gudang"
-        if (($role==("Admin")) || ($role==("Pegawai Kasir")) || ($role==("Staff Gudang"))) {
+        if (($role==("Admin"))  || ($role==("Staff Gudang"))) {
             // mengembalikan nilai True 
             return True;
         }else{
